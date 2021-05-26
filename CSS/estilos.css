@@ -1,0 +1,741 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*Estilos Generales*/
+html,body {
+    height:100%;  
+    font-size: 1.09rem;
+}
+
+/*Estilos de los textos*/
+
+h2{
+    font-size: 1.45rem;
+    margin-bottom: 20px;
+
+}
+
+p{
+    line-height: 1.8;
+    padding-right: 1em;
+    margin-bottom: 25px;
+}
+
+/*Estilos de los botones*/
+.btn {
+    display: block;
+    background-color: #5f3e51;
+    color: #fff;
+    width: 250px;
+    padding: 12px 1em;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #22161d;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: #000
+}
+
+.transparent {
+    display: inline-block;
+    background-color:#5f3e51 ;
+    color:#fff;
+    border: 1px solid;
+    padding: 12px 1em;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    margin: 25px 1em 35px
+}
+
+.transparent2 {
+    display: inline-block;
+    background-color:#5f3e51 ;
+    color:#fff;
+    border: 1px solid;
+    padding: 12px 1em;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    margin: 35px 4em 60px ;
+}   
+
+.transparent3 {
+    display: inline-block;
+    background-color:#5f3e51 ;
+    color:#fff;
+    border: 1px solid;
+    padding: 12px 1em;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 4em 45px;
+    margin-bottom: 60px;
+
+}
+
+
+.transparent:hover{
+    background-color: transparent;
+    color: #000
+}
+
+
+.transparent2:hover{
+    background-color: transparent;
+    color: #000
+}
+
+.transparent3:hover{
+    background-color: transparent;
+    color: #000
+}
+
+
+/*Modificar el modelo de cajas de CSS*/
+html {
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+}
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+/*Resetear margenes y padding*/
+*{
+    margin:0;
+    padding:0
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+/*ESTILOS DE LOS CONTENIDOS*/
+/*Barra de navegacion*/
+
+#navbar {
+    background-color: rgba(98, 63, 98, 0.863);
+}
+
+#navigation {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+#main-nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    font-family:'Lato', sans-serif;
+}
+
+#main-nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight:bold;
+    padding: 60px 1.1em;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+#main-nav li a:hover{
+    background-color: #5f3e51;
+}
+
+
+#navbar-toggle{
+    color:#fff;
+    font-size:1.5rem;
+    position: absolute;
+    top:20px;
+    right:55px;
+    display: none;
+}
+
+
+
+/*Pie de pagina*/
+
+footer{
+    background-color: #5f3e51 ;
+    color: #aeaeae;
+
+}
+
+#pieDepagina {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px 0;
+}
+
+footer h3 {
+    color: #9f9f9f;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+   footer ul {
+       margin: 20px 0;
+   }
+
+   footer li {
+       list-style: none;
+       padding: 5px 0;
+   }
+
+   footer ul li a {
+       color: #9f9f9f;
+       text-decoration: none;
+       font-size: 0.88rem;
+   }
+
+   footer a img {
+       width: 150px;
+   }
+
+   #social{
+       text-align: center;
+   }
+
+   #social .fab{
+       color:#fff;
+       font-size: 1.3rem;
+       margin-left: 0.5em;
+       margin-right: 0.5em;
+      
+   }
+   
+   #copyright{
+       color: #9f9f9f;
+       text-align: center;
+       font-size: 1rem;
+       border-top: 1px solid #3a2f3d;
+       padding: 12px 0;
+
+   }
+
+/*ESTILOS DE LA PAGINA DE INICIO*/
+/*SECCION 1*/
+
+article#home > section:nth-child(1){
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(112, 112, 112, 0.9)), to(rgba(213, 180, 221, 0.9))),url(../images/fondo_superior.jpg);
+    background-image: -o-linear-gradient(rgba(112, 112, 112, 0.9), rgba(213, 180, 221, 0.9)),url(../images/fondo_superior.jpg);
+    background-image: linear-gradient(rgba(112, 112, 112, 0.9), rgba(213, 180, 221, 0.9)),url(../images/fondo_superior.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#seccionPrimera{
+    height: 100%;
+    min-height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+#seccionPrimera h1 {
+    color: #fff;
+    font-size:3.5rem ;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#seccionPrimera h2 {
+    color: #fff;
+    font-size:2.5rem ;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center;  
+}
+
+#seccionPrimera p {
+    color:#fff;
+    font-size:1.5rem;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#seccionPrimera a{
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+    border:1px solid;
+    display: inline-block;
+    padding: 12px 2.5em;
+    margin: 12px 0 0 ;
+}
+
+#seccionPrimera a:hover {
+    background-color: #aeaeae;
+    color: #000;
+}
+
+/*SECCION 2*/
+
+#seccionSegunda {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 80px 0;
+}
+
+#seccionSegunda div {
+    padding: 0 0.5em;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+}
+
+#seccionSegunda img{
+    width: 50%;
+    height: 50%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    max-width: 40%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+}
+
+/*SECCION 3*/
+
+article> section:nth-child(3){
+   background-color: #f3f3f8;
+
+}
+
+#seccionTercera {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#seccionTercera.container {
+    width: 100%;
+}
+
+#seccionTercera div{
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding-left: 2em;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+/*SECCION 4*/
+article> section:nth-child(4){
+    text-align: center;
+    padding: 80px 0 12px;
+}
+
+#seccionCuarta{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    margin: 80px auto;
+}
+
+.col {
+    margin: 0 0.9em;
+}
+
+.col .fas{
+    color:#4d065c;
+    font-size: 3rem;
+    margin-bottom: 25px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 50px;
+    background-color: #fff;
+
+}
+
+.col h3{
+    margin-bottom: 12px;
+    color:#3c3c3c;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+/*Estilos de las paginas*/
+/*Acerca de */
+
+main header {
+    background-color: #5f3e51;
+    color: #fff;
+    padding: 40px 0;
+    margin-bottom: 40px;
+
+}
+
+main header h1{
+    font-size: 1.90rem;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+#pages {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+}
+
+#pages section{
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+}
+
+
+aside img {
+    width: 50%;
+    height: 70%;
+    float: center;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    -ms-flex-item-align:center;
+        -ms-grid-row-align:center;
+        align-self:center
+}
+
+aside h3{
+    background-color: #f3f1fe;
+    padding: 10x 0 0.5em;
+    margin-bottom: 30px;
+    font-size: 1.20rem;
+    font-weight: 100;
+    text-align:center;
+    width: 70%;
+    margin-top: 20px;
+}
+
+a.transparent{
+display: inline-block;
+}
+
+#socialMedia{
+    margin:0 0 25px 0.5em;
+    font-size: 2.5rem;
+}
+
+
+
+#socialMedia i{
+color: #5f3e51;
+-webkit-box-pack:justify;
+    -ms-flex-pack:justify;
+        justify-content:space-between;
+
+}
+
+/*Areas de Practica */
+.row{
+    clear:both;
+    overflow: hidden;
+    margin-bottom: 12px;
+   
+}
+
+.row img {
+    float: left;
+    width: 30%;
+   
+
+}
+
+aside.row{
+    float: left;
+    width: 30%;
+    margin-right: 1em;
+    margin-bottom: 12px;
+}
+
+
+a.transparent2{
+    display: inline-block;
+    }
+
+label{
+    display:block;
+    margin: 10px 0;
+    font-size: 0.98rem;
+    
+}  
+
+.asterisco {
+    color: #ff0000
+}
+
+
+input[type="text"], input[type="email"]{
+
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    border: 1px solid #ccc
+}
+
+textarea#comentario {
+    width: 80%;
+    height: 45px;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+input[type="submit"]{
+    background-color:#008000 ;
+    display: inline-block;
+    padding: 10px 1em ;
+    width: 80%;
+    border:none;
+    color:#fff;
+    font-size: inherit;
+    margin-bottom: 30px;
+   
+}
+
+/*MEDIA QUERIES*/
+/*Aplicar los siguientes estilos para viewport 1199px*/
+@media screen and (max-width:1199px){  
+    body{
+       font-size:0.95rem;
+    }
+}
+
+/*Aplicar los siguientes estilos para viewport entre 960px-1199px*/
+@media screen and (min-width:960px)and (max-width:1199px){
+
+    #seccionPrimera h1 {
+        font-size: 2.5rem ;
+    }
+
+    #seccionPrimera h2 {
+        font-size:1.35rem ;
+        
+    }
+    
+    #seccionPrimera p {
+        font-size:1.25rem;
+    }
+
+    h2{
+        font-size: 1.3rem
+    }
+    #seccionTercera img{
+        -ms-flex-preferred-size: 45%;
+            flex-basis: 45%;
+        max-width: 45%;
+    }
+
+    #seccionTercera div{
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        padding-top: 2em;
+        padding-right: 2em;
+  
+    }
+
+    .col h3{
+        font-size: 1rem;
+    }
+
+    aside {
+
+        -ms-flex-preferred-size: 50%;
+
+            flex-basis: 50%;
+    }
+
+    aside img {
+        width: 80%;
+        height: 50%;
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
+        -ms-flex-item-align:center;
+            -ms-grid-row-align:center;
+            align-self:center
+    }
+    .transparent{
+        margin-bottom: 30px;
+
+    }
+
+    .transparent2 {
+        margin-bottom: 30px;
+
+    }
+
+    .transparent3 {
+        margin-bottom: 30px;
+
+    }
+    
+}   
+
+/*Aplicar los siguientes estilos para viewport sean igual menor 959px*/
+@media screen and (max-width:959px){
+
+    #navigation{
+        display:block;
+}
+  #main-nav{
+      display:none;
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+          -ms-flex-direction:column;
+              flex-direction:column;
+  }
+   #navbar-toggle{
+    display: block;
+}
+
+#main-nav li a{
+    display:block;
+    padding: 20px 1em;
+}
+
+#seccionPrimera h1{
+    font-size: 2.5rem;
+}
+
+#seccionPrimera p{
+    font-size: 1.25rem;
+}
+
+#seccionCuarta{
+    display:block;
+    margin: 80px auto;
+}
+
+#seccionTercera{
+    display: block;
+}
+
+
+
+#seccionTercera img{
+    width: 100%;
+    height: 10%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -ms-flex-item-align:center;
+        -ms-grid-row-align:center;
+        align-self:center
+ 
+}
+
+}
+
+/*Aplicar los siguientes estilos para viewport sean igual menor 400px*/
+@media screen and (max-width:400px){
+  
+    #seccionPrimera{
+        height: 80%;
+        min-height: 400px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+                margin-top: 0%;
+    }
+
+    #seccionPrimera h1 {
+        font-size: 2.3rem ;
+    }
+
+    #seccionPrimera h2 {
+        font-size:1.15rem ;
+        
+    }
+    
+    #seccionPrimera p {
+        font-size:1rem ;
+        
+    }
+#seccionSegunda img{
+        display: none;
+
+    }
+
+#seccionTercera img{
+    display: none;
+}
+
+    footer a img {
+        width: 100px;
+    }
+
+
+ 
+    #social .fab{
+        color:#fff;
+        font-size: 0.8rem;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        float: center;
+       
+    }
+
+    #pages section{
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        padding: 0;
+    }
+
+    aside{
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    }
+
+   #pages.container aside img{
+        display: none;
+    }
+
+    #pieDepagina{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+    }
+}

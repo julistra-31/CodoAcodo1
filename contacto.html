@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS3/style.css"">
+    <title> Julieta Straminsky</title>
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+ 
+
+    <!--Icon Fonts-->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+   
+
+    <!--Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180"href="IMAGES/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="IMAGES/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"href="IMAGES/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+<!--Cabecera-->
+<header>
+    <nav id="navbar">
+        <div id="navigation" class="container">
+            <a href="index.HTML"><img src="images/logojs.png" alt="logotipo"></a>
+            <span id="navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <ul id="main-nav">
+                <li><a href="index.HTML">Home</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="areas-practica.html">Areas de practica</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<!--Cuerpo del documento-->
+<main>
+
+<header>
+      <div class="container"> 
+          <h1> Contacto</h1>
+          
+      </div>
+ </header>
+
+<article id="pages" class="container">
+     <section>
+         <h2>Formulario de contacto</h2>
+         <p> Para solicitar Información complete el siguiente formulario. <br>
+         Los campos marcados con asterisco <span class="asterisco">(*)</span>son requeridos</p>
+
+         <div id="formulario">
+
+         <form action="" method="POST">
+
+            <label for="name">Nombre <span class="asterisco">(*)</span>: </label>
+            <input type="text" id="nombre" required>
+
+            <label for="Apellido">Apellido <span class="asterisco">(*)</span>: </label>
+            <input type="text" id="Apellido" required>
+
+            <label for="email"> Email <span class="asterisco">(*)</span>: </label>
+            <input type="email" id="email" required>
+
+            <label for="telefono">Telefono <span class="asterisco">(*)</span>: </label>
+            <input type="text" id="telefono">
+
+            <label for="celular"> Celular <span class="asterisco">(*)</span>: </label>
+            <input type="text" id="celular" required>
+
+            <label for="comentario"> ¿cómo te puedo ayudar? <span class="asterisco">(*)</span>: </label>
+            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="Enviar formulario">
+          
+        
+        </form>
+    </div>
+
+        
+     </section>
+
+     <aside>
+             <img src="images/fotojuli.jpg" alt="foto de la cara de una persona">
+
+             <h3>Redes sociales</h3>
+             <div id="socialMedia">
+                <a href="#"><i class="fab fa-facebook"></i> </a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i> </a>
+             </div>
+         
+
+     </aside>
+
+</article>
+
+
+</main>
+
+
+<!--Pie de Pàgina-->
+<footer>
+    <div id="pieDepagina" class="container">
+        <div>
+            <h3>Corporativo</h3>
+            <ul>
+                <li><a href="socios.html"></a>Socios</li>
+                <li><a href="empleos.html"></a>Trabaja con nosotros</li>
+                <li><a href="contacto.html"></a>Contacto</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="condiciones.html"></a>Terminos y condiciones</li>
+                <li><a href="privacidad.html"></a>politica de privacidad</li>
+            </ul>
+
+        </div>
+        <div>
+            <a href="index.html"><img src="images/logojs.png" alt="Logotipo"></a>
+            <div id="social">
+                <a href="#"><i class="fab fa-facebook"></i> </a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i> </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="copyright">
+         &copy Derechos reservados.
+    </div>
+</footer>
+<script>
+    // Comportamientos para el menú de navegación.
+    let mainNav=document.getElementById('main-nav');
+    let navbarToggle=document.getElementById('navbar-toggle');
+    navbarToggle.addEventListener('click',function() {
+
+    if (this.classList.contains('active')){
+        mainNav.style.display="none";
+        this.classList.remove('active');
+    }
+    else {
+        mainNav.style.display="flex";
+        this.classList.add('active');
+    }
+    });
+</script>
+
+
+</body>
+</html>
